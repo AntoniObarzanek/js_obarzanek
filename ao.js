@@ -2,8 +2,8 @@ const seats=12;
 const title="Kurs JavaScript"
 
 let enrolled=1;
-let slogan
-let course
+let slogan=123;
+let course=4;
 
 console.log(typeof seats);
 console.log(typeof title);
@@ -36,3 +36,11 @@ switch (enrolled) {
     default:
      console.log(`Kurs w przygotowaniu`);
 }
+
+function makeHeader()
+{
+    console.log(`Kurs ${course}!`);
+    console.log(`${enrolled}/${seats} uczestnokow!`);
+    console.log(`${slogan}`);
+}
+makeHeader();
